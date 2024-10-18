@@ -13,6 +13,8 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #23314D;
+    padding: 24px 16px;
+    gap: 56px;
 }
 
 header {
@@ -38,6 +40,7 @@ nav input {
     background: none;
     background-color: white;
     padding: 0px 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav input::placeholder {
@@ -64,15 +67,119 @@ nav img {
 article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 0px 16px;
+    gap: 44px;
+}
+
+article h1 {
+    font-family: "Unbounded";
+    font-size: 25px;
+    font-weight: 900;
+    color: #DDE6ED;
+}
+
+article h2 {
+    font-family: "Unbounded";
+    font-size: 10px;
+    font-weight: 400;
+    color: #DDE6ED;
 }
 
 .titlesBox {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .temperature-Box {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.temperature-Box h2:first-of-type {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Tendays {
+    display: flex;
+    flex-direction: column;
+    background-color: #3A4D72;
+    opacity: 0.7;
+    border-radius: 20px;
+    padding: 20px 24px;
+    gap: 12px;
+}
+
+.Tendays h2 {
+    font-family: "Unbounded";
+    font-size: 10px;
+    font-weight: 200;
+    color: #DDE6ED;
+}
+
+.Tendays h3 {
+    font-family: "Unbounded";
+    font-size: 8px;
+    font-weight: 200;
+    color: #DDE6ED;
+}
+
+.daysList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.daysDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dayIco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.dayIco h2 {
+    width: 52px;
+}
+
+.minMaxT {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.minMaxT h3 {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.min {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.max {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.max h3 {
+    color: #E3D859;
 }
