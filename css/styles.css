@@ -9,16 +9,30 @@ body {
     background-color: #DDE6ED;
 }
 
+header {
+    padding: 20px 0px 32px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     background-color: #23314D;
-    padding: 24px 16px;
+    padding: 24px 16px 40px;
     gap: 56px;
 }
 
-header {
-    padding: 20px 0px 32px;
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0px;
+}
+
+footer p {
+    font-family: "Unbounded";
+    font-size: 8px;
+    font-weight: 200;
 }
 
 nav {
@@ -107,8 +121,8 @@ article h2 {
 .Tendays {
     display: flex;
     flex-direction: column;
-    background-color: #3A4D72;
-    opacity: 0.7;
+    background-color: rgba(58, 77, 114, 70%);
+    opacity: 0.8;
     border-radius: 20px;
     padding: 20px 24px;
     gap: 12px;
@@ -182,4 +196,97 @@ article h2 {
 
 .max h3 {
     color: #E3D859;
+}
+
+.detail-info {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(58, 77, 114, 70%);
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 20px 24px;
+    gap: 44px 20px;
+}
+
+.detail-info img {
+    opacity: 0.6;
+}
+
+.detail-info img:nth-child(1) {
+    position: absolute;
+    width: 172px;
+    top: 12px;
+    left: -60px;
+    transform: rotate(16deg);
+}
+
+.detail-info img:nth-child(2) {
+    position: absolute;
+    width: 172px;
+    bottom: -40px;
+    left: -100px;
+    transform: rotate(-8deg);
+}
+
+.detail-info img:nth-child(3) {
+    position: absolute;
+    top: -56px;
+    right: -16px;
+    opacity: 1;
+}
+
+.detail-info img:nth-child(4) {
+    position: absolute;
+    bottom: -4px;
+    right: -16px;
+    opacity: 1;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    z-index: 1001;
+    background-color: #23314D;
+    border-radius: 20px;
+    padding: 12px 12px 24px;
+    width: 124px;
+}
+
+.info-box h2 {
+    font-family: "Unbounded";
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(221, 230, 237, 60%);
+}
+
+.info-box h3 {
+    font-family: "Unbounded";
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(58, 77, 114, 70%);
+    opacity: 0.8;
+    border-radius: 20px;
+    padding: 20px 24px;
+}
+
+.map h2 {
+    font-family: "Unbounded";
+    font-size: 12px;
+    font-weight: 200;
+    color: white;
+}
+
+.map-box {
+    background-color: #23314D;
+    border-radius: 20px;
+    padding: 12px 12px 24px;
 }
